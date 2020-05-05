@@ -1,6 +1,6 @@
 # sign-language-recognition
 ## Training
-python3 train.py \
+python train.py \
   --bottleneck_dir=logs/bottlenecks \
   --how_many_training_steps=2000 \
   --model_dir=inception \
@@ -8,3 +8,6 @@ python3 train.py \
   --output_graph=logs/trained_graph.pb \
   --output_labels=logs/trained_labels.txt \
   --image_dir=./dataset
+
+## Classification
+python classify.py path/to/image.jpg
