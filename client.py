@@ -3,7 +3,7 @@ import requests
 import json
 import cv2
 
-addr = 'http://localhost:5000'
+addr = 'http://159.65.157.105:5000'
 test_url = addr + '/api/recieveData'
 
 # prepare headers for http request
