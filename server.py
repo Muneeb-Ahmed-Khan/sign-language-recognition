@@ -35,7 +35,7 @@ def recieveData():
     nparr = np.fromstring(r.data, np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     img = cv2.rotate(img, cv2.ROTATE_180)
-    img = cv2.flip(img, 1)
+    #img = cv2.flip(img, 1)
 
     #Croping the center 200px square
     height = img.shape[0]
@@ -66,4 +66,4 @@ def recieveData():
     return Response(response= res, status=200, mimetype="application/json")
 
 # start flask app
-app.run(host="159.65.157.105", port=5000)
+app.run(host="192.168.1.108", port=5000)
